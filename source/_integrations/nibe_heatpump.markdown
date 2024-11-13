@@ -36,6 +36,7 @@ Supported devices:
 - F730
 - S735
 - F750
+- S1255
 - SMO40
 - SMOS40
 - VVM225
@@ -105,6 +106,6 @@ If your system is equipped with a MODBUS40 accessory, this can be used to contro
 - `serial://[DEVICE PATH]` for direct local connection
 - `rfc2217://[IP OR HOSTNAME]:[PORT]` for a [ser2net](https://linux.die.net/man/8/ser2net) type proxy
 
-<div class='note info'>
+{% note %}
 Support for RCU-based communication is currently untested.
-</div>
+{% endnote %}

@@ -6,17 +6,22 @@ ha_category:
   - Plug
   - Remote
   - Sensor
+  - Lock
   - Switch
+  - Vacuum
 ha_release: '2023.10'
 ha_iot_class: Cloud Polling
 ha_codeowners:
   - '@SeraphicRav'
   - '@laurence-presland'
+  - '@Gigatrappeur'
 ha_domain: switchbot_cloud
 ha_platforms:
   - climate
+  - lock
   - sensor
   - switch
+  - vacuum
 ha_config_flow: true
 ha_integration_type: hub
 ---
@@ -38,16 +43,21 @@ Please note, device names configured in the SwitchBot app are transferred into H
 - IR appliances exposed through the different hubs:
   - ON/OFF for all appliance types excepted "Others"
   - Air Conditioner
+- Lock
 - Meter
 - MeterPlus
+- MeterPro
+- MeterPro (C02)
 - Outdoor Meter
+- Vacuum K10+, K10+ pro, S1, S1 Plus
+- Hub 2
 
 ## Important considerations
 
-<div class='note warning'>
+{% note %}
 Each sensor will request a status update from the SwitchBot Cloud API once every 10 minutes (600 seconds). The SwitchBot Cloud API limits users to 10,000 requests per day.
-</div>
+{% endnote %}
 
-<div class='note warning'>
+{% warning %}
 For IR Appliances, the state is inferred from previous commands in Home Assistant and might not reflect reality if you use other ways to control the device.
-</div>
+{% endwarning %}
