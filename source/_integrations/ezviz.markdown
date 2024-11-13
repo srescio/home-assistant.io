@@ -158,7 +158,7 @@ Once triggered, the siren will automatically deactivate after 60 seconds (EZVIZ 
 
 If your camera supports motion detection warning sounds, you can use this entity to select the level.
 
-### Bettery work mode
+### Battery work mode
 
 For battery powered cameras, you can use this entity to select the battery work mode to optimize your battery consumption.
 
